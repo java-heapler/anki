@@ -1,6 +1,8 @@
-# Anki
+# Anki MCP
 
 A JSON CLI and agent skill for a running local Anki desktop app with [AnkiConnect](https://git.sr.ht/~foosoft/anki-connect). Uses API v6 with Python's standard library; no runtime dependencies and no direct collection database access.
+
+Repository: [java-heapler/anki-mcp](https://github.com/java-heapler/anki-mcp). The executable remains `anki-agent`; this package exposes a CLI and agent skill, not an MCP server.
 
 ## Install
 
@@ -42,7 +44,7 @@ Commands return JSON on stdout. Exit 0 indicates success, 1 an operational JSON 
 
 ```sh
 uv sync --extra dev
-uv run pytest --cov=anki_agent --cov-branch --cov-report=term-missing
+uv run pytest
 uv build
 ```
 

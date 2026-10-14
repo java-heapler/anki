@@ -12,5 +12,5 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: uv sync --locked --extra dev
-      - run: uv run pytest --cov=anki_agent --cov-branch --cov-fail-under=98 --cov-report=term-missing
+      - run: uv run pytest
       - run: uv build
